@@ -1,20 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { GoalComponent } from './goal/goal.component';
 import { QuoteComponent } from './quote/quote.component';
-import { QouteDetailComponent } from './qoute-detail/qoute-detail.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
+import {FormsModule} from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    GoalComponent,
     QuoteComponent,
-    QouteDetailComponent
+    QuoteDetailsComponent,
+    QuoteFormComponent,
+   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
