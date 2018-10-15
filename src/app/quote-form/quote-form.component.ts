@@ -8,13 +8,13 @@ import { DatePipe } from '@angular/common';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-    newQuote = new Quote (0,"","","",0 , 0,);
+    newQuote = new Quote (0,"","","",0 , 0,new Date);
 
     @Output() addQuote=new EventEmitter<Quote>();
     
     submitQuote(){
         this.addQuote.emit(this.newQuote);
-        this.newQuote = new Quote (0,"","","",0 , 0,);
+        this.newQuote = new Quote (0,"","","",0 , 0,new Date);
 
     }  
 
